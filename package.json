@@ -1,6 +1,6 @@
 {
 	"name": "meadow-connection-rocksdb",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"description": "Meadow RocksDB Connection Provider",
 	"main": "source/Meadow-Connection-RocksDB.js",
 	"scripts": {
@@ -25,6 +25,6 @@
 		"rocksdb": "^5.2.1"
 	},
 	"devDependencies": {
-		"fable": "^3.1.63"
+		"fable": "^3.1.71"
 	}
 }
