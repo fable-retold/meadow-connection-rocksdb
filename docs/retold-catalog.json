@@ -1,76 +1,131 @@
 {
-	"Generated": "2026-04-10T03:20:12.711Z",
+	"Generated": "2026-05-22T05:39:50.144Z",
+	"Mode": "module",
 	"GitHubOrg": "stevenvelozo",
 	"DefaultBranch": "master",
-	"Groups": [
-		{
-			"Name": "Data",
-			"Key": "data",
-			"Description": "",
-			"Modules": [
-				{
-					"Name": "test-connection",
-					"Repo": "test-connection",
-					"Group": "data",
-					"Branch": "master",
-					"HasDocs": false,
-					"HasCover": false,
-					"Sidebar": [],
-					"DocFiles": []
-				}
-			]
-		},
-		{
-			"Name": "Dist",
-			"Key": "dist",
-			"Description": "",
-			"Modules": [
-				{
-					"Name": "indoctrinate_content_staging",
-					"Repo": "indoctrinate_content_staging",
-					"Group": "dist",
-					"Branch": "master",
-					"HasDocs": false,
-					"HasCover": false,
-					"Sidebar": [],
-					"DocFiles": []
-				}
-			]
-		},
-		{
-			"Name": "Docs",
-			"Key": "docs",
-			"Description": "",
-			"Modules": [
-				{
-					"Name": "api",
-					"Repo": "api",
-					"Group": "docs",
-					"Branch": "master",
-					"HasDocs": true,
-					"HasCover": false,
-					"Sidebar": [],
-					"DocFiles": [
-						"api/closeAsync.md",
-						"api/connect.md",
-						"api/connectAsync.md",
-						"api/db.md",
-						"api/reference.md"
-					]
-				},
-				{
-					"Name": "css",
-					"Repo": "css",
-					"Group": "docs",
-					"Branch": "master",
-					"HasDocs": true,
-					"HasCover": false,
-					"Sidebar": [],
-					"DocFiles": [
-						"css/docuserve.css"
-					]
-				}
-			]
-		}
-	]
+	"Module": {
+		"Name": "meadow-connection-rocksdb",
+		"Repo": "meadow-connection-rocksdb",
+		"Group": "",
+		"Branch": "master",
+		"HasDocs": true,
+		"HasCover": true,
+		"Sidebar": [
+			{
+				"Title": "Getting Started",
+				"Children": [
+					{
+						"Title": "Overview",
+						"Path": "README.md"
+					},
+					{
+						"Title": "Quick Start",
+						"Path": "quickstart.md"
+					}
+				]
+			},
+			{
+				"Title": "Architecture",
+				"Children": [
+					{
+						"Title": "Design",
+						"Path": "architecture.md"
+					},
+					{
+						"Title": "Limitations",
+						"Path": "limitations.md"
+					}
+				]
+			},
+			{
+				"Title": "API Reference",
+				"Children": [
+					{
+						"Title": "Full Reference",
+						"Path": "api/reference.md"
+					},
+					{
+						"Title": "connectAsync",
+						"Path": "api/connectAsync.md"
+					},
+					{
+						"Title": "closeAsync",
+						"Path": "api/closeAsync.md"
+					},
+					{
+						"Title": "connect",
+						"Path": "api/connect.md"
+					},
+					{
+						"Title": "db",
+						"Path": "api/db.md"
+					}
+				]
+			},
+			{
+				"Title": "Examples",
+				"Children": [
+					{
+						"Title": "Full Pipeline",
+						"Path": "examples-pipeline.md"
+					}
+				]
+			},
+			{
+				"Title": "Retold Ecosystem",
+				"Children": [
+					{
+						"Title": "Meadow",
+						"Path": "meadow/meadow/README.md"
+					},
+					{
+						"Title": "FoxHound",
+						"Path": "meadow/foxhound/README.md"
+					},
+					{
+						"Title": "SQLite Connector",
+						"Path": "meadow/meadow-connection-sqlite/README.md"
+					},
+					{
+						"Title": "MySQL Connector",
+						"Path": "meadow/meadow-connection-mysql/README.md"
+					},
+					{
+						"Title": "MSSQL Connector",
+						"Path": "meadow/meadow-connection-mssql/README.md"
+					},
+					{
+						"Title": "Fable",
+						"Path": "fable/fable/README.md"
+					},
+					{
+						"Title": "Indoctrinate",
+						"Path": "utility/indoctrinate/README.md"
+					}
+				]
+			}
+		],
+		"DocFiles": [
+			".nojekyll",
+			"README.md",
+			"_brand.json",
+			"_cover.md",
+			"_sidebar.md",
+			"_topbar.md",
+			"_version.json",
+			"api/closeAsync.md",
+			"api/connect.md",
+			"api/connectAsync.md",
+			"api/db.md",
+			"api/reference.md",
+			"architecture.md",
+			"examples-pipeline.md",
+			"index.html",
+			"limitations.md",
+			"quickstart.md",
+			"retold-catalog.json",
+			"retold-keyword-index.json"
+		]
+	},
+	"Groups": []
 }
