@@ -22,10 +22,10 @@
 
 - Retold Ecosystem
 
-  - [Meadow](/meadow/meadow/)
-  - [FoxHound](/meadow/foxhound/)
-  - [SQLite Connector](/meadow/meadow-connection-sqlite/)
-  - [MySQL Connector](/meadow/meadow-connection-mysql/)
-  - [MSSQL Connector](/meadow/meadow-connection-mssql/)
-  - [Fable](/fable/fable/)
-  - [Indoctrinate](/utility/indoctrinate/)
+  - [Meadow](https://stevenvelozo.github.io/meadow/)
+  - [FoxHound](https://stevenvelozo.github.io/foxhound/)
+  - [SQLite Connector](https://stevenvelozo.github.io/meadow-connection-sqlite/)
+  - [MySQL Connector](https://stevenvelozo.github.io/meadow-connection-mysql/)
+  - [MSSQL Connector](https://stevenvelozo.github.io/meadow-connection-mssql/)
+  - [Fable](https://stevenvelozo.github.io/fable/)
+  - [Indoctrinate](https://stevenvelozo.github.io/indoctrinate/)

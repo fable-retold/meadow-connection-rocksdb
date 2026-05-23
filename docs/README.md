@@ -125,8 +125,8 @@ The provider manages the connection lifecycle and exposes the raw RocksDB databa
 
 | Module | Purpose |
 |--------|---------|
-| [Meadow](/meadow/meadow/) | ORM and data access layer |
-| [FoxHound](/meadow/foxhound/) | Query DSL and SQL generation |
-| [meadow-connection-sqlite](/meadow/meadow-connection-sqlite/) | SQLite connection provider |
-| [meadow-connection-mysql](/meadow/meadow-connection-mysql/) | MySQL connection provider |
-| [meadow-connection-mssql](/meadow/meadow-connection-mssql/) | MSSQL connection provider |
+| [Meadow](https://stevenvelozo.github.io/meadow/) | ORM and data access layer |
+| [FoxHound](https://stevenvelozo.github.io/foxhound/) | Query DSL and SQL generation |
+| [meadow-connection-sqlite](https://stevenvelozo.github.io/meadow-connection-sqlite/) | SQLite connection provider |
+| [meadow-connection-mysql](https://stevenvelozo.github.io/meadow-connection-mysql/) | MySQL connection provider |
+| [meadow-connection-mssql](https://stevenvelozo.github.io/meadow-connection-mssql/) | MSSQL connection provider |
