@@ -4,4 +4,4 @@
 - [Quick Start](quickstart.md)
 - [Architecture](architecture.md)
 - [API Reference](api/reference.md)
-- [GitHub](https://github.com/stevenvelozo/meadow-connection-rocksdb)
+- [GitHub](https://github.com/fable-retold/meadow-connection-rocksdb)

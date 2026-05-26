@@ -12,4 +12,4 @@ Connect any Fable application to a local RocksDB database through the service pr
 
 [Quick Start](README.md)
 [API Reference](api/reference.md)
-[GitHub](https://github.com/stevenvelozo/meadow-connection-rocksdb)
+[GitHub](https://github.com/fable-retold/meadow-connection-rocksdb)
