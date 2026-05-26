@@ -2,6 +2,6 @@
 	"Name": "meadow-connection-rocksdb",
 	"Version": "1.0.0",
 	"Description": "Meadow RocksDB Connection Provider",
-	"GeneratedAt": "2026-05-26T18:19:29.608Z",
-	"GitCommit": "41defdd"
+	"GeneratedAt": "2026-05-26T21:12:30.606Z",
+	"GitCommit": "0bb3a87"
 }
