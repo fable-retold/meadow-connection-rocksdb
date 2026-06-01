@@ -1,6 +1,6 @@
 # Meadow Connection RocksDB
 
-> **[&#9654; Read the Meadow-Connection-Rocksdb Documentation](https://fable-retold.github.io/meadow-connection-rocksdb/)** &mdash; interactive docs with the full API reference.
+> **[Read the Meadow-Connection-Rocksdb Documentation](https://fable-retold.github.io/meadow-connection-rocksdb/)** - interactive docs with the full API reference.
 
 A RocksDB embedded database connection provider for the Meadow ORM. Wraps the [rocksdb](https://www.npmjs.com/package/rocksdb) LevelDOWN binding as a Fable service, providing high-throughput key-value storage with prefix-based iteration, atomic batch writes, and automatic database creation.
 
