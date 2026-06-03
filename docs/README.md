@@ -91,33 +91,8 @@ The provider reads `RocksDBFolder` from two sources, in order of priority:
 
 ## How It Works
 
-```
-+-----------------------------+
-|  Fable Application          |
-|                             |
-|  fable.settings.RocksDB     |
-|   +-- RocksDBFolder         |
-+----------+------------------+
-           | connectAsync()
-           v
-+-----------------------------+
-|  MeadowConnectionRocksDB    |
-|  (Fable Service Provider)   |
-|                             |
-|  .connected                 |
-|  .db ----------------+      |
-+----------------------|------+
-                       |
-          +------------v------------+
-          |  rocksdb (LevelDOWN)    |
-          |                         |
-          |  .put(key, val, cb)     |
-          |  .get(key, cb)          |
-          |  .del(key, cb)          |
-          |  .batch(ops, cb)        |
-          |  .iterator(opts)        |
-          +-------------------------+
-```
+<!-- bespoke diagram: edit diagrams/how-it-works.mmd or .hints.json, then: npx pict-renderer-graph build modules/meadow/meadow-connection-rocksdb/docs -->
+![How It Works](diagrams/how-it-works.svg)
 
 The provider manages the connection lifecycle and exposes the raw RocksDB database object. All operations are asynchronous with Node.js-style callbacks.
 

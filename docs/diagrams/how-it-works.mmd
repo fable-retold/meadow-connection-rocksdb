@@ -1,0 +1,3 @@
+graph TD
+    Fable["Fable Application<br/>fable.settings.RocksDB<br/>+-- RocksDBFolder"] -->|connectAsync()| MeadowRocksDB["MeadowConnectionRocksDB<br/>(Fable Service Provider)<br/>.connected / .db"]
+    MeadowRocksDB --> RocksDB["rocksdb (LevelDOWN)<br/>.put(key, val, cb)<br/>.get(key, cb)<br/>.del(key, cb)<br/>.batch(ops, cb)<br/>.iterator(opts)"]
