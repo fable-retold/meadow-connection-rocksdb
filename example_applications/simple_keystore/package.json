@@ -1,0 +1,17 @@
+{
+	"name": "meadow-connection-rocksdb-example-simple-keystore",
+	"version": "1.0.0",
+	"description": "Minimal keystore application showing how to install and use meadow-connection-rocksdb with its optional rocksdb peer dependency.",
+	"main": "Simple-Keystore-Harness.js",
+	"scripts": {
+		"start": "node Simple-Keystore-Harness.js",
+		"test": "node Simple-Keystore-Harness.js"
+	},
+	"author": "Steven Velozo <steven@velozo.com>",
+	"license": "MIT",
+	"dependencies": {
+		"fable": "^3.1.75",
+		"meadow-connection-rocksdb": "file:../..",
+		"rocksdb": "^5.2.1"
+	}
+}

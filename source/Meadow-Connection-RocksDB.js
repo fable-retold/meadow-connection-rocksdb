@@ -4,7 +4,26 @@
 */
 const libFableServiceProviderBase = require('fable-serviceproviderbase');
 
-const libRocksDB = require('rocksdb');
+// rocksdb is an optional peer dependency -- consumers install it explicitly to enable this provider
+let libRocksDB = false;
+try
+{
+	libRocksDB = require('rocksdb');
+}
+catch (pRequireError)
+{
+	try
+	{
+		// file: and npm-link installs symlink this package outside the application tree, so the peer must also be resolved from the entry script's paths
+		libRocksDB = require(require.resolve('rocksdb', { paths: require.main ? require.main.paths : [] }));
+	}
+	catch (pFallbackRequireError)
+	{
+		libRocksDB = false;
+	}
+}
+
+const ROCKSDB_MISSING_MESSAGE = `The optional peer dependency [rocksdb] is not installed; Meadow-Connection-RocksDB cannot connect without it.  Run [npm install rocksdb] in your application (on GCC 13+ toolchains: [CXXFLAGS="-include cstdint" npm install rocksdb]).`;
 
 /*
 	Configuration pattern:
@@ -48,6 +67,12 @@ class MeadowConnectionRocksDB extends libFableServiceProviderBase
 		{
 			this.log.error(`Meadow RocksDB connect() called without a callback; this could lead to connection race conditions.`);
 			tmpCallback = () => { };
+		}
+
+		if (!libRocksDB)
+		{
+			this.log.error(ROCKSDB_MISSING_MESSAGE);
+			return tmpCallback(new Error(ROCKSDB_MISSING_MESSAGE));
 		}
 
 		let tmpConnectionSettings = this.options;
