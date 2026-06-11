@@ -144,3 +144,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Example application runtime data
+example_applications/simple_keystore/data/

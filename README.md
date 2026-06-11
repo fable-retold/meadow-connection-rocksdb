@@ -21,10 +21,18 @@ A RocksDB embedded database connection provider for the Meadow ORM. Wraps the [r
 ## Installation
 
 ```bash
-npm install meadow-connection-rocksdb
+npm install meadow-connection-rocksdb rocksdb
 ```
 
-The `rocksdb` dependency compiles a native addon at install time -- a C++ compiler toolchain must be available on the host.
+The `rocksdb` package is an *optional peer dependency* -- it compiles a native addon at install time, so it is not pulled in automatically. Install it explicitly (as above) in any application that uses this provider; without it the provider loads fine but `connect()` returns an error. A C++ compiler toolchain must be available on the host.
+
+On GCC 13 or newer the bundled RocksDB sources fail to compile (`uint64_t does not name a type`); force-include the missing header:
+
+```bash
+CXXFLAGS="-include cstdint" npm install rocksdb
+```
+
+See [`example_applications/simple_keystore`](example_applications/simple_keystore) for a runnable application with its own `package.json` showing this setup.
 
 ## Quick Start
 

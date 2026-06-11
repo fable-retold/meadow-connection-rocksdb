@@ -9,7 +9,7 @@ This guide walks you through setting up a RocksDB connection, performing basic k
 ### Install
 
 ```bash
-npm install meadow-connection-rocksdb fable
+npm install meadow-connection-rocksdb rocksdb fable
 ```
 
 ### Configure and Connect

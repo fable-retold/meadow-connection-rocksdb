@@ -7,10 +7,10 @@ RocksDB databases are stored in a local folder and require no server process. Th
 ## Install
 
 ```bash
-npm install meadow-connection-rocksdb
+npm install meadow-connection-rocksdb rocksdb
 ```
 
-Requires Node.js. The `rocksdb` dependency compiles a native addon at install time -- a C++ compiler toolchain must be available on the host.
+Requires Node.js. The `rocksdb` package is an optional peer dependency -- install it explicitly as shown above. It compiles a native addon at install time, so a C++ compiler toolchain must be available on the host (on GCC 13+, use `CXXFLAGS="-include cstdint" npm install rocksdb`).
 
 ## Quick Start
 
